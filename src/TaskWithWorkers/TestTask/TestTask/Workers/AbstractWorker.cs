@@ -11,7 +11,7 @@ namespace TestTask.Workers
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public abstract double GetSalary();
+        public abstract double Salary { get; }
 
         public AbstractWorker(int id, string name, double rate)
         {

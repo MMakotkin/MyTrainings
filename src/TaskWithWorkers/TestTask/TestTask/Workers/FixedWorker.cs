@@ -9,9 +9,9 @@ namespace TestTask.Workers
     {
         public FixedWorker(int id, string name, double rate) : base(id, name, rate) { }
 
-        public override double GetSalary()
+        public override double Salary
         {
-            return rate;
+            get { return rate; }
         }
     }
 }

@@ -9,9 +9,9 @@ namespace TestTask.Workers
     {
         public BasedOnTimeWorker(int id, string name, double rate) : base(id, name, rate) { }
 
-        public override double GetSalary()
+        public override double Salary
         {
-            return 20.8 * 8 * rate;
+            get { return 20.8*8*rate; }
         }
     }
 }
